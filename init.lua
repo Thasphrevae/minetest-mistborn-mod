@@ -383,15 +383,15 @@ minetest.register_craftitem("mistborn:atium_bead", {
 
 minetest.register_node("mistborn:hathsin_crystal", {
 	description = S("Hathsin Crystal"),
-	mesh = "crystal.obj",
-	tiles = {"crystal.png"},
-	drawtype = "mesh",
+	tiles = {"hathsin.png"},
+	drawtype = "plantlike",
 	groups = {cracky = 1},
 	drop = "mistborn:atium_bead",
 	use_texture_alpha = false,
 	selection_box = {
 		type = "fixed",
-		fixed = {-0.3, -0.5, -0.3, 0.3, 0.35, 0.3}
+		--          x    y     z    x     y    z
+		fixed = {-0.3, -0.45, -0.3, 0.3, 0.15, 0.3}
 	},
 })
 
